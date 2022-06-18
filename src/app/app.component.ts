@@ -24,15 +24,14 @@ export class AppComponent implements OnInit {
       this.input.split(' ').forEach(item => { if (item !== ' ' && item !== '') this.badWords.push(item); });
       this.input = '';
     }
-    console.log(this.badWords)
   }
   reset(): void {
     this.badWords.length = 0;
     this.input = '';
     this.area = '';
     this.inputPlaceholder = 'word here...';
+    this.areaPlaceholder = 'text here...';
     this.areaIsEmpty = this.inputIsEmpty = '';
-    console.log(this.badWords)
   }
   cenzor(): void {
     this.areaIsEmpty = this.area === "" ? 'empty' : '';
