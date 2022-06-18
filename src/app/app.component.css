@@ -1,0 +1,106 @@
+*{
+    font-family: sans-serif;
+}
+header{
+    padding-top: 30px;
+    background-color: azure;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px lightgrey;
+}
+h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(239, 239, 239);
+}
+p, span{
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+.input-box{
+    display: flex;
+    padding: 15px 0;
+}
+
+.input-box input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #bdbdbd;
+}
+.input-box input:focus, textarea:focus{
+    box-shadow: 0px 0px 2px 2px lightblue;
+    outline: none;
+    border-color: rgb(28, 168, 228);
+}
+.btn{
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-add{
+    background-color: rgb(253, 211, 0);
+}
+.btn-add:hover{
+    background-color: rgb(253, 194, 0);
+}
+.btn-add:active{
+    box-shadow: 0px 0px 2px 2px rgb(253, 169, 0);
+}
+.btn-res{
+    background-color: red;
+    color: white;
+}
+.btn-res:hover{
+    background-color: rgb(228, 8, 8);
+}
+.btn-res:active{
+    box-shadow: 0px 0px 2px 2px rgb(198, 8, 8);
+}
+textarea{
+    resize: vertical;
+    min-height: 120px;
+    margin-bottom: 15px;
+}
+.btn-cenz{
+    width: 100%;
+    background-color: green;
+    margin: 0;
+    color: white;
+}
+.btn-cenz:hover{
+    background-color: rgb(51, 139, 51);
+}
+.btn-cenz:active{
+    box-shadow: 0px 0px 2px 2px rgb(78, 229, 78);
+}
+#empty{
+    border-color: red;
+}
+#empty:focus{
+    box-shadow: 0px 0px 2px 2px rgb(229, 113, 78);
+}
